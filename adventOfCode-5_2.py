@@ -33,10 +33,21 @@ for coord_value in coords_value:
                 res[key] +=1
             else:
                 res[key] = 1
-            delta -= 1       
+            delta -= 1
+    else:
+        boolx = coord_value['x1'] < coord_value['x2']
+        booly = coord_value['y1'] < coord_value['y2']
+        delta = abs(int(coord_value['x1']) - int(coord_value['x2']))
+        while delta >= 0:
+            key = f'{int(coord_value["x1"])+(delta if boolx else -delta)}-{int(coord_value["y1"])+(delta if booly else -delta)}'
+            if key in res:
+                res[key] +=1
+            else:
+                res[key] = 1
+            delta -= 1    
 
 counter = 0  
 for key in res.keys():
     if res[key] >= 2:
         counter += 1
-print(f'Resultat : {counter}')
+print(f'Résultat : {counter}')
