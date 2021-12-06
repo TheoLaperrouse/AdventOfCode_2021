@@ -39,4 +39,4 @@ counter = 0
 for key in res.keys():
     if res[key] >= 2:
         counter += 1
-print(f'Resultat : {counter}')
+print(f'Résultat : {counter}')
