@@ -1,6 +1,3 @@
-from collections import Counter
-import copy
-
 file = open('input.txt', "r")
 lines = file.readlines()
 file.close()
@@ -17,6 +14,7 @@ for dest in range(maxPos):
             allFuel += dest - horizontal_pos
         elif dest < horizontal_pos:
             allFuel += horizontal_pos - dest
-    minFuel = allFuel
+    if allFuel < minFuel:
+        minFuel = allFuel
 
-print(minFuel)
+print(f'Résultat : {minFuel}')
