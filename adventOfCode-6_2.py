@@ -18,10 +18,10 @@ while day < 256:
     prev_fishs = copy.copy(fishs)
     for key in fishs.keys():
         if key == '8':
-            #new_born
+            # new_born
             fishs['8'] = prev_fishs['0']
         elif key == '6':
-            #parents + almost_new_born
+            # almost_new_born + parents 
             fishs['6'] = prev_fishs['7'] + prev_fishs['0']
         else:
             fishs[key] = prev_fishs[f'{int(key)+1}']
