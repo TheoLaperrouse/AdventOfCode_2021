@@ -17,5 +17,6 @@ for bit in range(0, number_bits - 1):
 gamma_rate_int = int(gamma_rate, 2)
 epsilon_rate_int = int(epsilon_rate, 2)
 
-print(f'Gamma Rate : {gamma_rate}(base2) = {gamma_rate_int}(base10)\nEpsilon Rate : {epsilon_rate}(base2) = {epsilon_rate_int}(base10)')
+print(f'Gamma Rate : {gamma_rate}(base2) = {gamma_rate_int}(base10)')
+print(f'Epsilon Rate : {epsilon_rate}(base2) = {epsilon_rate_int}(base10)')
 print(f'Answer : {gamma_rate_int*epsilon_rate_int}')

@@ -31,5 +31,8 @@ oxygen_generator_rating_int = int(oxygen_generator_rating, 2)
 co2_scrubber_rating_int = int(co2_scrubber_rating, 2)
 
 
-print(f'Oxygen Generator Rating: {oxygen_generator_rating}(base2) = {oxygen_generator_rating_int}(base10)\nCO2 Scrubber Rating: {co2_scrubber_rating}(base2) = {co2_scrubber_rating_int}(base10)')
+print(
+    f'Oxygen Generator Rating: {oxygen_generator_rating}(base2) = {oxygen_generator_rating_int}(base10)')
+print(
+    f'CO2 Scrubber Rating: {co2_scrubber_rating}(base2) = {co2_scrubber_rating_int}(base10)')
 print(f'Answer : {oxygen_generator_rating_int*co2_scrubber_rating_int}')
