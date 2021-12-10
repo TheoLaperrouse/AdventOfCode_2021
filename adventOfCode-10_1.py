@@ -1,4 +1,5 @@
 from collections import Counter
+
 file = open('input.txt', "r")
 lines = file.readlines()
 file.close()
@@ -33,4 +34,5 @@ for line in lines:
 
 counter = Counter(invalid_carac).most_common()
 res = sum([tab_points[close[0]]*close[1] for close in counter])
+
 print(f'Résultat : {res}')

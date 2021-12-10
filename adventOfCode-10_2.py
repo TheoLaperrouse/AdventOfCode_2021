@@ -44,5 +44,5 @@ for line in lines:
 allPoints = []
 for tab in list_opens:
     allPoints.append(scoreTabOpen(tab))
-print(len(allPoints))
+
 print(f'Résultat : {int(statistics.median(allPoints))}')
